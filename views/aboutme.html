@@ -14,7 +14,6 @@ body,h1,h2 {font-family: "Arial", sans-serif}
 </style>
 <body>
 
-<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-grey w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -26,7 +25,6 @@ body,h1,h2 {font-family: "Arial", sans-serif}
     <a href="/aboutme" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
   </div>
 
-  <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="/lesson1" class="w3-bar-item w3-button w3-padding-large">Lesson 1</a>
     <a href="/lesson2" class="w3-bar-item w3-button w3-padding-large">Lesson 2</a>
@@ -36,14 +34,6 @@ body,h1,h2 {font-family: "Arial", sans-serif}
 
   </div>
 </div>
-
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Hello Firends!</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 
 <body style="background-color:powderblue;">
 
@@ -79,13 +69,18 @@ body,h1,h2 {font-family: "Arial", sans-serif}
     </p>
 </div>
 
-</body>
-</html>
-  
-<audio autoplay loop>
-      <source src="dababy.mp3">
-</audio>
+  <script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 
+</script>
   
+  </body>
 </body>
 </html>
