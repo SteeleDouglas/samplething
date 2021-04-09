@@ -7,6 +7,7 @@ const express = require("express");
 const app = express();
 
 // our default array of dreams
+
 const dreams = [
   "Find and count some sheep",
   "Climb a really tall mountain",
@@ -19,7 +20,19 @@ app.use(express.static("public"));
 
 // https://expressjs.com/en/starter/basic-routing.html
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  response.sendFile(__dirname + "/views/home.html");
+});
+app.get("/lesson1", (request, response) => {
+  response.sendFile(__dirname + "/views/lesson1.html");
+});
+app.get("/lesson2", (request, response) => {
+  response.sendFile(__dirname + "/views/lesson2.html");
+});
+app.get("/lesson3", (request, response) => {
+  response.sendFile(__dirname + "/views/lesson3.html");
+});
+app.get("/projects", (request, response) => {
+  response.sendFile(__dirname + "/views/projects.html");
 });
 app.get("/aboutme", (request, response) => {
   response.sendFile(__dirname + "/views/aboutme.html");
